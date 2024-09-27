@@ -10,23 +10,29 @@
 }
 
 :root {
-  --color-primary: rgb(51, 51, 51);
-  --color-secondary: #f6f6f6;
-  --font-family: system-ui;
+  background-color: rgb(56, 229, 77);
+  --color-primary: rgb(33, 146, 255);
+  --color-secondary: rgb(156, 255, 46);
+  --color-tertiary: rgb(253, 255, 0);
+  --font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
 body {
   font-family: var(--font-family);
   color: var(--color-primary);
   padding: 20px;
+  background-image: url(/assets/background-image.png);
 }
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 10px;
 }
 
 .title {
   padding: 10px 0;
+  text-align: center;
 }
