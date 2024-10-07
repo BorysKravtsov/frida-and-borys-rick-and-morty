@@ -16,7 +16,6 @@ export function createPagination(currentPage, totalPages, onPageChange) {
     const prevButton = navigation.querySelector('[data-js="button-prev"]');
     const nextButton = navigation.querySelector('[data-js="button-next"]');
 
-    // Добавляем обработчики событий для кнопок и вызываем коллбек onPageChange
     prevButton?.addEventListener("click", () => {
       if (currentPage > 1) {
         onPageChange(currentPage - 1);
